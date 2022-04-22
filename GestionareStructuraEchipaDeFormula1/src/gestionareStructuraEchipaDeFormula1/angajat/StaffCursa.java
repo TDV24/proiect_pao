@@ -1,16 +1,21 @@
-package gestionareStructuraEchipaDeFormula1.Angajat;
+package gestionareStructuraEchipaDeFormula1.angajat;
 
-public class AltJob extends Angajat{
+public class StaffCursa extends Angajat{
 
     private int varsta;
     private int salariu;
-    private String hobby;
+    private int longevitate;
 
-    public AltJob(String prenume, String nume, int varsta, int salariu, String hobby) {
+    public StaffCursa(String prenume, String nume, int varsta, int salariu, int longevitate) {
         super(prenume, nume);
         this.varsta = varsta;
         this.salariu = salariu;
-        this.hobby = hobby;
+        this.longevitate = longevitate;
+    }
+
+    @Override
+    public int getIdAngajat() {
+        return super.getIdAngajat();
     }
 
     public int getVarsta() {
@@ -29,27 +34,27 @@ public class AltJob extends Angajat{
         this.salariu = salariu;
     }
 
-    public String getHobby() {
-        return hobby;
+    public int getLongevitate() {
+        return longevitate;
     }
 
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
+    public void setLongevitate(int longevitate) {
+        this.longevitate = longevitate;
     }
 
     @Override
     public String toString() {
-        return ("ID_Angajat: " + this.getId_angajat() + "\n"
+        return ("ID_Angajat: " + this.getIdAngajat() + "\n"
                 + "Nume: " + this.getNume() + "\n"
                 + "Prenume: " + this.getPrenume() + "\n"
                 + "Varsta: " + this.varsta + "\n"
                 + "Salariu: " + this.salariu + "\n"
-                + "Hobby(pe langa formula 1): " + this.hobby + "\n"
+                + "Longevitate: " + this.longevitate + "\n"
                 + "----------------------------------------");
     }
 
     @Override
     public String getJob() {
-        return "Acest angajat are o alta slujba in aceasta echipa!";
+        return "Acest angajat are slujba de Staff_Cursa";
     }
 }

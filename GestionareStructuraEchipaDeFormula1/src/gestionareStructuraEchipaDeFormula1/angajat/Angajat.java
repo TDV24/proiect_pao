@@ -1,14 +1,14 @@
-package gestionareStructuraEchipaDeFormula1.Angajat;
+package gestionareStructuraEchipaDeFormula1.angajat;
 
 public abstract class Angajat {
     private static int id = 0;
-    private int id_angajat;
+    private int idAngajat;
     private String prenume;
     private String nume;
 
     public Angajat(String prenume, String nume) {
         id = id + 1;
-        this.id_angajat = id;
+        this.idAngajat = id;
         this.prenume = prenume;
         this.nume = nume;
     }
@@ -29,12 +29,12 @@ public abstract class Angajat {
         this.nume = nume;
     }
 
-    public int getId_angajat() {
-        return id_angajat;
+    public int getIdAngajat() {
+        return idAngajat;
     }
 
-    public void setId_angajat(int id_angajat) {
-        this.id_angajat = id_angajat;
+    public void setIdAngajat(int idAngajat) {
+        this.idAngajat = idAngajat;
     }
 
     abstract public String getJob();

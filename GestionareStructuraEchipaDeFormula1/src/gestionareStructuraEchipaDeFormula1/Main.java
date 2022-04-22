@@ -1,8 +1,8 @@
 package gestionareStructuraEchipaDeFormula1;
 
-import gestionareStructuraEchipaDeFormula1.Angajat.AltJob;
-import gestionareStructuraEchipaDeFormula1.Angajat.Pilot;
-import gestionareStructuraEchipaDeFormula1.Angajat.StaffCursa;
+import gestionareStructuraEchipaDeFormula1.angajat.AltJob;
+import gestionareStructuraEchipaDeFormula1.angajat.Pilot;
+import gestionareStructuraEchipaDeFormula1.angajat.StaffCursa;
 
 import static gestionareStructuraEchipaDeFormula1.Echipa.*;
 

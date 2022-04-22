@@ -1,4 +1,4 @@
-package gestionareStructuraEchipaDeFormula1.Angajat;
+package gestionareStructuraEchipaDeFormula1.angajat;
 
 public class Pilot extends Angajat{
 
@@ -39,7 +39,7 @@ public class Pilot extends Angajat{
 
     @Override
     public String toString() {
-        return ("ID_Angajat: " + this.getId_angajat() + "\n"
+        return ("ID_Angajat: " + this.getIdAngajat() + "\n"
                 + "Nume: " + this.getNume() + "\n"
                 + "Prenume: " + this.getPrenume() + "\n"
                 + "Varsta: " + this.varsta + "\n"

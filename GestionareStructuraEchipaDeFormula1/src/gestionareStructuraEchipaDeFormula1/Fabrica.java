@@ -4,13 +4,13 @@ public class Fabrica {
 
     private String locatie;
     private String adresa;
-    private int numar_angajati;
+    private int numarAngajati;
     private int suprafata;
 
-    public Fabrica(String locatie, String adresa, int numar_angajati, int suprafata) {
+    public Fabrica(String locatie, String adresa, int numarAngajati, int suprafata) {
         this.locatie = locatie;
         this.adresa = adresa;
-        this.numar_angajati = numar_angajati;
+        this.numarAngajati = numarAngajati;
         this.suprafata = suprafata;
     }
 
@@ -30,12 +30,12 @@ public class Fabrica {
         this.adresa = adresa;
     }
 
-    public int getNumar_angajati() {
-        return numar_angajati;
+    public int getNumarAngajati() {
+        return numarAngajati;
     }
 
-    public void setNumar_angajati(int numar_angajati) {
-        this.numar_angajati = numar_angajati;
+    public void setNumarAngajati(int numarAngajati) {
+        this.numarAngajati = numarAngajati;
     }
 
     public int getSuprafata() {
@@ -50,7 +50,7 @@ public class Fabrica {
     public String toString() {
         return (  "Locatia fabricii(tara): " + this.locatie + "\n"
                 + "Adresa: " + this.adresa + "\n"
-                + "Numar de angajati: " + this.numar_angajati + "\n"
+                + "Numar de angajati: " + this.numarAngajati + "\n"
                 + "Suprafata(hectare): " + this.suprafata + "\n"
                 + "----------------------------------------");
     }

@@ -5,17 +5,17 @@ import java.util.Enumeration;
 public class Echipa {
 
     private static String nume;
-    private static int numar_trofee_piloti;
-    private static int numar_trofee_constructori;
-    private static String tara_de_origine;
+    private static int numarTrofeePiloti;
+    private static int numarTrofeeConstructori;
+    private static String taraDeOrigine;
 
     private static Echipa echipa;
 
     private Echipa(){
         nume = "Oracle Red Bull Racing";
-        numar_trofee_piloti = 5;
-        numar_trofee_constructori = 4;
-        tara_de_origine = "Austria";
+        numarTrofeePiloti = 5;
+        numarTrofeeConstructori = 4;
+        taraDeOrigine = "Austria";
     }
 
     public static Echipa getEchipa(){
@@ -28,21 +28,21 @@ public class Echipa {
         return nume;
     }
 
-    public int getNumar_trofee_piloti() {
-        return numar_trofee_piloti;
+    public int getNumarTrofeePiloti() {
+        return numarTrofeePiloti;
     }
 
-    public int getNumar_trofee_constructori() {
-        return numar_trofee_constructori;
+    public int getNumarTrofeeConstructori() {
+        return numarTrofeeConstructori;
     }
 
-    public String getTara_de_origine() {
-        return tara_de_origine;
+    public String getTaraDeOrigine() {
+        return taraDeOrigine;
     }
 
-    public static void detalii_echipa(){
+    public static void InformatiiEchipa(){
         System.out.println("Numele echipei este " + nume + ", avand "
-                + numar_trofee_piloti + " trofee obtinute la piloti si " + numar_trofee_constructori
-                + " trofee castigate la constructori, fiind originara din " + tara_de_origine);
+                + numarTrofeePiloti + " trofee obtinute la piloti si " + numarTrofeeConstructori
+                + " trofee castigate la constructori, fiind originara din " + taraDeOrigine);
     }
 }

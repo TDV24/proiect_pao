@@ -5,13 +5,13 @@ public class Magazin {
     private String locatie;
     private String adresa;
     private int incasari;
-    private int articole_vandute;
+    private int articoleVandute;
 
-    public Magazin(String locatie, String adresa, int incasari, int articole_vandute) {
+    public Magazin(String locatie, String adresa, int incasari, int articoleVandute) {
         this.locatie = locatie;
         this.adresa = adresa;
         this.incasari = incasari;
-        this.articole_vandute = articole_vandute;
+        this.articoleVandute = articoleVandute;
     }
 
     public String getLocatie() {
@@ -38,12 +38,12 @@ public class Magazin {
         this.incasari = incasari;
     }
 
-    public int getArticole_vandute() {
-        return articole_vandute;
+    public int getArticoleVandute() {
+        return articoleVandute;
     }
 
-    public void setArticole_vandute(int articole_vandute) {
-        this.articole_vandute = articole_vandute;
+    public void setArticoleVandute(int articoleVandute) {
+        this.articoleVandute = articoleVandute;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class Magazin {
         return ("Locatia magazinului(tara): " + this.locatie + "\n"
                 + "Adresa: " + this.adresa + "\n"
                 + "Incasari: " + this.incasari + "\n"
-                + "Articole vandute: " + this.articole_vandute + "\n"
+                + "Articole vandute: " + this.articoleVandute + "\n"
                 + "----------------------------------------");
     }
 }

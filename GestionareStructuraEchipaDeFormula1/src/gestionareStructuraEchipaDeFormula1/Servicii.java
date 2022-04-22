@@ -1,49 +1,50 @@
 package gestionareStructuraEchipaDeFormula1;
 
-import gestionareStructuraEchipaDeFormula1.Angajat.AltJob;
-import gestionareStructuraEchipaDeFormula1.Angajat.Angajat;
-import gestionareStructuraEchipaDeFormula1.Angajat.Pilot;
-import gestionareStructuraEchipaDeFormula1.Angajat.StaffCursa;
+import gestionareStructuraEchipaDeFormula1.angajat.AltJob;
+import gestionareStructuraEchipaDeFormula1.angajat.Angajat;
+import gestionareStructuraEchipaDeFormula1.angajat.Pilot;
+import gestionareStructuraEchipaDeFormula1.angajat.StaffCursa;
 
+import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Servicii {
 
-    private ArrayList<Angajat> angajati = new ArrayList<>();
-    private ArrayList<Pilot> piloti = new ArrayList<>();
-    private ArrayList<StaffCursa> staff = new ArrayList<>();
-    private ArrayList<AltJob> altejoburi = new ArrayList<>();
-    private ArrayList<Fabrica> fabrici = new ArrayList<>();
-    private ArrayList<Magazin> magazine = new ArrayList<>();
-    private ArrayList<Sponsor> sponsori = new ArrayList<>();
+    private List<Angajat> angajati = new ArrayList<>();
+    private List<Pilot> piloti = new ArrayList<>();
+    private List<StaffCursa> staff = new ArrayList<>();
+    private List<AltJob> altejoburi = new ArrayList<>();
+    private List<Fabrica> fabrici = new ArrayList<>();
+    private List<Magazin> magazine = new ArrayList<>();
+    private List<Sponsor> sponsori = new ArrayList<>();
     private Map<Integer, Integer> salarii = new HashMap<>();
 
     public Pilot crearePilot(String prenume, String nume, int varsta, int salariu, int victorii){
         Pilot pilot = new Pilot(prenume, nume, varsta, salariu, victorii);
-        int id_pilot = pilot.getId_angajat();
+        int idPilot = pilot.getIdAngajat();
         angajati.add(pilot);
         piloti.add(pilot);
-        salarii.put(id_pilot, salariu);
+        salarii.put(idPilot, salariu);
         return pilot;
     }
 
     public StaffCursa creareStaffCursa(String prenume, String nume, int varsta, int salariu, int longevitate){
         StaffCursa staffCursa = new StaffCursa(prenume, nume, varsta, salariu, longevitate);
-        int id_staffCursa = staffCursa.getId_angajat();
+        int idStaffCursa = staffCursa.getIdAngajat();
         angajati.add(staffCursa);
         staff.add(staffCursa);
-        salarii.put(id_staffCursa, salariu);
+        salarii.put(idStaffCursa, salariu);
         return staffCursa;
     }
 
     public AltJob creareAltJob(String prenume, String nume, int varsta, int salariu, String hobby){
         AltJob altJob = new AltJob(prenume, nume, varsta, salariu, hobby);
-        int id_altJob = altJob.getId_angajat();
+        int idAltJob = altJob.getIdAngajat();
         angajati.add(altJob);
         altejoburi.add(altJob);
-        salarii.put(id_altJob, salariu);
+        salarii.put(idAltJob, salariu);
         return altJob;
     }
 
@@ -66,7 +67,7 @@ public class Servicii {
     }
 
     public void IstorieEchipa(){
-        Echipa.detalii_echipa();
+        Echipa.InformatiiEchipa();
     }
 
     public void detaliiAngajati(){
