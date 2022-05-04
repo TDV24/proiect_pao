@@ -13,6 +13,10 @@ public class Pilot extends Angajat{
         this.victorii = victorii;
     }
 
+    public Pilot(){
+        super();
+    }
+
     public int getVarsta() {
         return varsta;
     }

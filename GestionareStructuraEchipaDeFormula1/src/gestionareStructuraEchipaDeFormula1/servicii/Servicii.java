@@ -1,9 +1,13 @@
-package gestionareStructuraEchipaDeFormula1;
+package gestionareStructuraEchipaDeFormula1.servicii;
 
 import gestionareStructuraEchipaDeFormula1.angajat.AltJob;
 import gestionareStructuraEchipaDeFormula1.angajat.Angajat;
 import gestionareStructuraEchipaDeFormula1.angajat.Pilot;
 import gestionareStructuraEchipaDeFormula1.angajat.StaffCursa;
+import gestionareStructuraEchipaDeFormula1.entitati.Echipa;
+import gestionareStructuraEchipaDeFormula1.entitati.Fabrica;
+import gestionareStructuraEchipaDeFormula1.entitati.Magazin;
+import gestionareStructuraEchipaDeFormula1.entitati.Sponsor;
 
 import java.util.List;
 import java.util.ArrayList;

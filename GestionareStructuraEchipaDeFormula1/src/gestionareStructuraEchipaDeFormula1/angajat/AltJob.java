@@ -13,6 +13,10 @@ public class AltJob extends Angajat{
         this.hobby = hobby;
     }
 
+    public AltJob(){
+        super();
+    }
+
     @Override
     public int getIdAngajat() {
         return super.getIdAngajat();
@@ -55,6 +59,6 @@ public class AltJob extends Angajat{
 
     @Override
     public String getJob() {
-        return "Acest angajat are o alta slujba in aceasta echipa!";
+        return "Acest angajat are o alta slujba in aceasta echipa";
     }
 }

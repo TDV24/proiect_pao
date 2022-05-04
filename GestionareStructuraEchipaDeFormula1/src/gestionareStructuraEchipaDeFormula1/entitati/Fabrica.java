@@ -1,4 +1,4 @@
-package gestionareStructuraEchipaDeFormula1;
+package gestionareStructuraEchipaDeFormula1.entitati;
 
 public class Fabrica {
 
