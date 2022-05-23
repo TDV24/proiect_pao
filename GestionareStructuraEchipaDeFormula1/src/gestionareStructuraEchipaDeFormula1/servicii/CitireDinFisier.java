@@ -15,6 +15,10 @@ import java.util.Map;
 public class CitireDinFisier {
     private Map<Integer, Integer> salarii = new HashMap<>();
     private static CitireDinFisier instanta;
+
+    private CitireDinFisier() {
+    }
+
     public static synchronized CitireDinFisier getInstance(){
         if(instanta == null)
         {

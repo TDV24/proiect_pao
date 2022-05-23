@@ -44,11 +44,11 @@ public class Main {
         List<Magazin> magazine;
         List<Sponsor> sponsori;
         Map<Integer, Integer> salarii;
-        CitireDinFisier citireDinFisier = new CitireDinFisier();
-        ServiciiAngajat serviciiAngajat = new ServiciiAngajat();
-        AlteServicii alteServicii = new AlteServicii();
-        ScriereInAudit scriereInAudit = new ScriereInAudit();
-        ScriereInFisierPentruAngajat scriereInFisierPentruAngajat = new ScriereInFisierPentruAngajat();
+        CitireDinFisier citireDinFisier = CitireDinFisier.getInstance();
+        ServiciiAngajat serviciiAngajat = ServiciiAngajat.getInstance();
+        DetaliiFabriciMagazineSponsori detaliiFabriciMagazineSponsori = DetaliiFabriciMagazineSponsori.getInstance();
+        ScriereInAudit scriereInAudit = ScriereInAudit.getInstance();
+        ScriereInFisierPentruAngajat scriereInFisierPentruAngajat = ScriereInFisierPentruAngajat.getInstance();
         piloti = citireDinFisier.citestePiloti();
         staffCursa = citireDinFisier.citesteStaffCursa();
         altJob = citireDinFisier.citesteAltJob();
@@ -114,7 +114,7 @@ public class Main {
             }
             else if (alegere == 5) {
                 try {
-                    alteServicii.detaliiFabrici(fabrici);
+                    detaliiFabriciMagazineSponsori.detaliiFabrici(fabrici);
                     scriereInAudit.scrieInAudit("Detalii despre fabricile echipei");
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -122,7 +122,7 @@ public class Main {
             }
             else if (alegere == 6) {
                 try {
-                    alteServicii.detaliiMagazine(magazine);
+                    detaliiFabriciMagazineSponsori.detaliiMagazine(magazine);
                     scriereInAudit.scrieInAudit("Detalii despre magazinele echipei");
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -130,7 +130,7 @@ public class Main {
             }
             else if (alegere == 7) {
                 try {
-                    alteServicii.detaliiSponsori(sponsori);
+                    detaliiFabriciMagazineSponsori.detaliiSponsori(sponsori);
                     scriereInAudit.scrieInAudit("Detalii despre sponsorii echipei");
                 } catch (IOException e) {
                     e.printStackTrace();

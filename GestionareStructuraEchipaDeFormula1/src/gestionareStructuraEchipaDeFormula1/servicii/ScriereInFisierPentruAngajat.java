@@ -8,7 +8,11 @@ import java.io.IOException;
 
 public class ScriereInFisierPentruAngajat {
     private static ScriereInFisierPentruAngajat instanta;
-    private static synchronized ScriereInFisierPentruAngajat getInstance(){
+
+    private ScriereInFisierPentruAngajat() {
+    }
+
+    public static synchronized ScriereInFisierPentruAngajat getInstance(){
         if(instanta == null){
             instanta = new ScriereInFisierPentruAngajat();
         }

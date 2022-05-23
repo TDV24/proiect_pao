@@ -11,6 +11,10 @@ import java.util.Map;
 
 public class ServiciiAngajat {
     private static ServiciiAngajat instanta;
+
+    private ServiciiAngajat() {
+    }
+
     public static synchronized ServiciiAngajat getInstance(){
         if(instanta == null)
         {

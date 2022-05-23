@@ -8,7 +8,11 @@ import java.time.LocalTime;
 
 public class ScriereInAudit {
     private static ScriereInAudit instanta;
-    private static synchronized ScriereInAudit getInstance() {
+
+    private ScriereInAudit() {
+    }
+
+    public static synchronized ScriereInAudit getInstance() {
         if (instanta == null) {
             instanta = new ScriereInAudit();
         }

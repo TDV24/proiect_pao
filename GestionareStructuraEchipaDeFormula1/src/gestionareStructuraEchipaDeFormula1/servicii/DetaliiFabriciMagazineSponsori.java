@@ -6,12 +6,16 @@ import gestionareStructuraEchipaDeFormula1.entitati.Sponsor;
 
 import java.util.List;
 
-public class AlteServicii {
-    private static AlteServicii instanta;
-    private static synchronized AlteServicii getInstance(){
+public class DetaliiFabriciMagazineSponsori {
+    private static DetaliiFabriciMagazineSponsori instanta;
+
+    private DetaliiFabriciMagazineSponsori() {
+    }
+
+    public static synchronized DetaliiFabriciMagazineSponsori getInstance(){
         if(instanta == null)
         {
-            instanta = new AlteServicii();
+            instanta = new DetaliiFabriciMagazineSponsori();
         }
         return instanta;
     }
