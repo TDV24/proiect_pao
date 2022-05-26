@@ -13,6 +13,10 @@ public class StaffCursa extends Angajat{
         this.longevitate = longevitate;
     }
 
+    public StaffCursa() {
+        super();
+    }
+
     @Override
     public int getIdAngajat() {
         return super.getIdAngajat();

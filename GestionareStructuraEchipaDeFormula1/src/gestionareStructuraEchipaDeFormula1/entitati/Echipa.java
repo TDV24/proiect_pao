@@ -1,6 +1,4 @@
-package gestionareStructuraEchipaDeFormula1;
-
-import java.util.Enumeration;
+package gestionareStructuraEchipaDeFormula1.entitati;
 
 public class Echipa {
 

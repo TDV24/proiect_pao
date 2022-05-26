@@ -1,16 +1,21 @@
 package gestionareStructuraEchipaDeFormula1.angajat;
 
-public abstract class Angajat {
-    private static int id = 0;
-    private int idAngajat;
+public abstract class Angajat{
     private String prenume;
     private String nume;
+    private static int id = 0;
+    private int idAngajat;
 
     public Angajat(String prenume, String nume) {
         id = id + 1;
         this.idAngajat = id;
         this.prenume = prenume;
         this.nume = nume;
+    }
+
+    public Angajat(){
+        id = id + 1;
+        this.idAngajat = id;
     }
 
     public String getPrenume() {
