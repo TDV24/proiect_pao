@@ -25,7 +25,7 @@ public class Servicii {
     private List<Sponsor> sponsori = new ArrayList<>();
     private Map<String, Integer> salarii = new HashMap<>();
 
-    public Pilot crearePilot(String prenume, String nume, int varsta, int salariu, int victorii){
+    public Pilot crearePilot(String prenume, String nume, int varsta, int salariu, int victorii) {
         Pilot pilot = new Pilot(prenume, nume, varsta, salariu, victorii);
         angajati.add(pilot);
         piloti.add(pilot);

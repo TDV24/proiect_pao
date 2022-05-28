@@ -12,7 +12,6 @@ public class StaffCursa extends Angajat{
         this.salariu = salariu;
         this.longevitate = longevitate;
     }
-
     public int getVarsta() {
         return varsta;
     }

@@ -112,11 +112,10 @@ public class Main {
                     Pilot pilot = new Pilot(prenume, nume, varsta, salariu, victorii);
                     inserareInTabele.addAngajat(pilot);
                     scriereInAudit.scrieInAudit("Adaugare Pilot");
-                } catch (IOException e) {
-                    e.printStackTrace();
+                } catch (IOException ex) {
+                    ex.printStackTrace();
                 }
-            }
-            else if (alegere == 2) {
+            } else if (alegere == 2) {
                 try {
                     scanner.nextLine();
                     String nume, prenume;
@@ -137,8 +136,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 3) {
+            } else if (alegere == 3) {
                 try {
                     scanner.nextLine();
                     String nume, prenume, hobby;
@@ -160,8 +158,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 4) {
+            } else if (alegere == 4) {
                 try {
                     scanner.nextLine();
                     String locatie, adresa;
@@ -180,8 +177,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 5) {
+            } else if (alegere == 5) {
                 try {
                     scanner.nextLine();
                     String locatie, adresa;
@@ -200,8 +196,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 6) {
+            } else if (alegere == 6) {
                 try {
                     scanner.nextLine();
                     String nume, domeniu, amplasareSticker;
@@ -221,40 +216,35 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 7) {
+            } else if (alegere == 7) {
                 try {
                     citireDinTabele.readAngajati();
                     scriereInAudit.scrieInAudit("Detalii despre angajati");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 8) {
+            } else if (alegere == 8) {
                 try {
                     citireDinTabele.readFabrici();
                     scriereInAudit.scrieInAudit("Detalii despre fabrici");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 9) {
+            } else if (alegere == 9) {
                 try {
                     citireDinTabele.readMagazine();
                     scriereInAudit.scrieInAudit("Detalii despre magazine");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 10) {
+            } else if (alegere == 10) {
                 try {
                     citireDinTabele.readSponsori();
                     scriereInAudit.scrieInAudit("Detalii despre sponsori");
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 11) {
+            } else if (alegere == 11) {
                 try {
                     int salariuNou, id;
                     System.out.println("Salariu Nou: ");
@@ -266,8 +256,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 12) {
+            } else if (alegere == 12) {
                 try {
                     int numarAngajatiNou, id;
                     System.out.println("Numar Nou De Angajati: ");
@@ -279,8 +268,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 13) {
+            } else if (alegere == 13) {
                 try {
                     int incasariNou, articoleVanduteNou, id;
                     System.out.println("Numar Nou De Incasari: ");
@@ -294,8 +282,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 14) {
+            } else if (alegere == 14) {
                 try {
                     int investitieNou, id;
                     System.out.println("Investitie Noua: ");
@@ -307,8 +294,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 15) {
+            } else if (alegere == 15) {
                 try {
                     int id;
                     System.out.println("ID: ");
@@ -318,8 +304,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 16) {
+            } else if (alegere == 16) {
                 try {
                     int id;
                     System.out.println("ID: ");
@@ -329,8 +314,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 17) {
+            } else if (alegere == 17) {
                 try {
                     int id;
                     System.out.println("ID: ");
@@ -340,8 +324,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 18) {
+            } else if (alegere == 18) {
                 try {
                     int id;
                     System.out.println("ID: ");
@@ -351,8 +334,7 @@ public class Main {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-            }
-            else if (alegere == 19){
+            } else if (alegere == 19) {
                 try {
                     System.out.println("Suma tuturor salariilor este: " + updateInTabele.sumaSalarii());
                     scriereInAudit.scrieInAudit("Afisare suma tuturor salariilor");
@@ -380,7 +362,6 @@ public class Main {
             System.out.println("18. Sterge un sponsor");
             System.out.println("19. Afiseaza suma tuturor salariilor");
             System.out.println("20. Iesi din meniu");
-            System.out.println("Introduceti optiunea");
             alegere = scanner.nextInt();
         }
         try {
